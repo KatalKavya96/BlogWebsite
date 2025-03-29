@@ -19,30 +19,27 @@ git clone https://github.com/your-username/blog-website.git
 
 ## FEATURES
 
-Search bar to filter blog posts by keywords
+- Search bar to filter blog posts by keywords
 
-Login page with a simple user interface
+- Login page with a simple user interface
 
-Responsive and sticky navigation bar
+- Responsive and sticky navigation bar
 
-Follow section to discover and follow creators
+- Follow section to discover and follow creators
 
-Trending section showcasing the most popular blogs
+- Trending section showcasing the most popular blogs
 
-Blog cards dynamically rendered using fetched API data
+- Blog cards dynamically rendered using fetched API data
 
-Comment section under each blog post
+- Comment section under each blog post
 
-Like and Save functionality for user interaction
+- Like and Save functionality for user interaction
 
-"Show More" toggle to reveal hidden blog details
+- "Show More" toggle to reveal hidden blog details
 
-##TECH STACK
+## TECH STACK
 
-React (Vite)
-
-Tailwind CSS
-
-Fetch API
-
-React Hooks (useState, useEffect)
+- React (Vite)
+- Tailwind CSS
+- Fetch API
+- React Hooks (useState, useEffect)
