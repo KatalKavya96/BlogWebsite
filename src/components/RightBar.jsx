@@ -6,7 +6,7 @@ const RightBar = () => {
   return (
     
     <>
-        <div className='h-[43vh] w-90 fixed top-0 right-2 border border-white/30  mt-[70px] overflow-y-scroll text-white p-[15px] rounded-lg custom-scroll-hide bg-adder shadow-[-5px_10px_15px_2px_rgba(0,0,0,0.5)]'>
+        <div className='h-[43vh] w-90 fixed top-2 right-2 border border-white/30  mt-[70px] overflow-y-scroll text-white p-[15px] rounded-lg custom-scroll-hide bg-adder shadow-[-5px_10px_15px_2px_rgba(0,0,0,0.5)]'>
             
             <div className='h-15 text-xl font-bold mt-[5px]'>Who to follow</div>
 

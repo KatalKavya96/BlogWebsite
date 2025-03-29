@@ -11,7 +11,7 @@ const Navbar = ({ searchTerm, setSearchTerm }) => {
       
       <div className="h-10 w-10 flex items-center justify-center rounded-full  bg-purple-600 text-white/90 cursor-pointer shadow-[5px_10px_15px_2px_rgba(0,0,0,0.5)]">KK</div>
 
-      <div className="w-80 flex-grow ml-[26%] flex justify-center items-center">
+      <div className="w-80 flex-grow ml-[24%] flex justify-center items-center">
         <input type="text" value={searchTerm} placeholder='Search Countries' onChange={(e) => setSearchTerm(e.target.value)} className="w-full max-w-lg h-10 rounded-full px-4 bg-gray-800 text-white placeholder-gray-400 focus:outline-none"/>
       </div>
 
