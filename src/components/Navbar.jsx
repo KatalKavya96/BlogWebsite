@@ -36,7 +36,7 @@ const Navbar = ({ searchTerm, setSearchTerm }) => {
 
     <nav className="w-full h-16  flex items-center justify-center p-[30px] border border-white/20 fixed z-50 bg-adder shadow-[2px_2px_15px_1px_rgba(0,0,0,0.3)]">
       
-      <img className='h-50 w-45 transform translate-y-1 ml-[60px] ' src='../../public/TBlogora.png'></img>
+      <img className='h-50 w-45 transform translate-y-1 ml-[60px] ' src='https://i.imgur.com/vWaEQmw.png'></img>
 
       <div className="w-80 flex-grow ml-[10%] flex justify-center items-center">
         <input type="text" value={searchTerm} placeholder='Search Countries' onChange={(e) => setSearchTerm(e.target.value)} className="w-full max-w-lg h-10 rounded-full px-4 bg-gray-800 text-white placeholder-gray-400 focus:outline-none"/>
