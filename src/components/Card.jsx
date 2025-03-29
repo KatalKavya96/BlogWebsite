@@ -37,7 +37,7 @@ const Card = () => {
     const toggleInfoSection = (countryName) => {
         setInfoVisibility((prev) => ({
             ...prev,
-            [countryName]: !prev[countryName], // Toggle visibility
+            [countryName]: !prev[countryName],
         }));
     };
 
@@ -45,7 +45,7 @@ const Card = () => {
     const toggleCommentSection = (countryName) => {
       setCommentVisibility((prev) => ({
         ...prev,
-        [countryName]: !prev[countryName], // Toggle visibility
+        [countryName]: !prev[countryName],
       }));
     };
   
@@ -57,7 +57,7 @@ const Card = () => {
     };
   
     const submitComment = (countryName) => {
-      if (!commentInputs[countryName]) return; // Don't allow empty comments
+      if (!commentInputs[countryName]) return;
   
       setComments((prev) => ({
         ...prev,
@@ -66,7 +66,7 @@ const Card = () => {
   
       setCommentInputs((prev) => ({
         ...prev,
-        [countryName]: "", // Clear input after submitting
+        [countryName]: "",
       }));
     };
     
@@ -136,36 +136,20 @@ const Card = () => {
                 </div>
 
                 <div>
-                    <svg 
-                        onClick={() => handleSave(country.name.common)}
-                        className="w-4 cursor-pointer hover:scale-110 transition duration-100" 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        viewBox="0 0 384 512"
-                    >
-                        <path 
-                            fill={saved[country.name.common] ? "#FFD800" : "#ffffff"} 
-                            d="M0 48C0 21.5 21.5 0 48 0l0 48 0 393.4 130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4 336 48 48 48 48 0 336 0c26.5 0 48 21.5 48 48l0 440c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488L0 48z"
-                        />
+                    <svg onClick={() => handleSave(country.name.common)} className="w-4 cursor-pointer hover:scale-110 transition duration-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path fill={saved[country.name.common] ? "#FFD800" : "#ffffff"} d="M0 48C0 21.5 21.5 0 48 0l0 48 0 393.4 130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4 336 48 48 48 48 0 336 0c26.5 0 48 21.5 48 48l0 440c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488L0 48z"/>
                     </svg>
                 </div>
             </div>
 
             {commentVisibility[country.name.common] && (
             <div className="w-full mt-4">
-              <textarea
-                value={commentInputs[country.name.common] || ""}
-                onChange={(event) => handleCommentChange(event, country.name.common)}
-                placeholder="Write your comment..."
-                className="w-full p-2 border border-white/40 rounded-lg bg-gray-800 text-white"
-              />
-              <button
-                onClick={() => submitComment(country.name.common)}
-                className="mt-2 px-4 py-2 bg-green-500 text-white rounded-lg"
-              >
+              <textarea value={commentInputs[country.name.common] || ""} onChange={(event) => handleCommentChange(event, country.name.common)} placeholder="Write your comment..." className="w-full p-2 border border-white/40 rounded-lg bg-gray-800 text-white"/>
+              <button onClick={() => submitComment(country.name.common)} className="mt-2 px-4 py-2 bg-green-500 text-white rounded-lg">
                 Submit Comment
               </button>
 
-              {/* Display Comments */}
+             
               <div className="mt-4 w-full">
                 {comments[country.name.common] &&
                   comments[country.name.common].map((comment, index) => (

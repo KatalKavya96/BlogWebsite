@@ -14,7 +14,9 @@ function App() {
   return (
     <>
       <Routes>
+        
         <Route path="/" element={!isAuthenticated ? (<AdminPage setIsAuthenticated={setIsAuthenticated} />) : (<Navigate to="/main" />)}/>
+
         <Route path="/main" element={
           isAuthenticated ? (
               <>
@@ -29,6 +31,7 @@ function App() {
             )
           }
         />
+
       </Routes>
     </>
   );
