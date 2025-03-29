@@ -29,16 +29,16 @@ const Slider = () => {
 
             </div>
 
-            <div className='w-full h-25 border-t border-t-white/20 mt-[30%] flex justify-between items-center p-[20px]'>
+            <div className='w-90 h-25 border-t border-t-white/20 fixed bottom-0 left-0 flex justify-between items-center p-[20px]'>
               <div className='flex justify-center items-center gap-2'>
                 <div className="h-14 w-14 flex items-center justify-center rounded-full  bg-purple-600 text-white/90 cursor-pointer shadow-[5px_10px_15px_2px_rgba(0,0,0,0.5)]">KK</div>
                 <div className='flex flex-col items-center justify-center'>
-                  <div className='text-lg font-bold text-white/90'>Kavya Katal</div>
-                  <div className='text-small text-white/40'>@kavyakatal09</div>
+                  <div className='text-lg font-bold text-white/90 cursor-pointer'>Kavya Katal</div>
+                  <div className='text-small text-white/40 cursor-pointer'>@kavyakatal09</div>
                 </div>
               </div>
-              <div className='h-8 w-8 text-white'>
-                <svg className='opacity-80' fill="white" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i"><g><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path></g></svg>
+              <div className='h-8 w-8 text-white cursor-pointer'>
+                <svg className='opacity-80 cursor-pointer' fill="white" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i"><g><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path></g></svg>
               </div>
             </div>
 

@@ -140,11 +140,7 @@ const Card = () => {
             {commentVisibility[country.name.common] && (
             <div className="w-full mt-4">
               <textarea value={commentInputs[country.name.common] || ""} onChange={(event) => handleCommentChange(event, country.name.common)} placeholder="Write your comment..." className="w-full p-2 border border-white/40 rounded-lg bg-gray-800 text-white"/>
-              <button onClick={() => submitComment(country.name.common)} className="mt-2 px-4 py-2 bg-green-500 text-white rounded-lg">
-                Submit Comment
-              </button>
-
-             
+              <button onClick={() => submitComment(country.name.common)} className="mt-2 px-4 py-2 bg-green-500 text-white rounded-lg cursor-pointer">Submit Comment</button>
               <div className="mt-4 w-full">
                 {comments[country.name.common] &&
                   comments[country.name.common].map((comment, index) => (
