@@ -17,6 +17,9 @@ git clone https://github.com/your-username/blog-website.git
 
 4. npm run dev
 
+Username - admin
+Password - admin
+
 
 FEATURES
 
