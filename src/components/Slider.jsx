@@ -14,9 +14,11 @@ const Slider = () => {
 
             <div className="flex flex-col text-white gap-6 p-6">
 
-            <nav className="flex flex-col gap-3 justify-center items-center">
+            <nav className="flex flex-col gap-4 justify-center items-center">
                 <a href="#" className="w-70 flex justify-center items-center hover:bg-white/15 p-2 rounded-lg transition bg-white/5 border border-white/10 shadow-[5px_10px_15px_2px_rgba(0,0,0,0.5)]">Home</a>
                 <a href="#" className="w-70 flex justify-center items-center hover:bg-white/15 p-2 rounded-lg transition bg-white/5 border border-white/10 shadow-[5px_10px_15px_2px_rgba(0,0,0,0.5)]">Recent</a>
+                <a href="#" className="w-70 flex justify-center items-center hover:bg-white/15 p-2 rounded-lg transition bg-white/5 border border-white/10 shadow-[5px_10px_15px_2px_rgba(0,0,0,0.5)]">Popular</a>
+                <a href="#" className="w-70 flex justify-center items-center hover:bg-white/15 p-2 rounded-lg transition bg-white/5 border border-white/10 shadow-[5px_10px_15px_2px_rgba(0,0,0,0.5)]">Communities</a>
                 <a href="#" className="w-70 flex justify-center items-center hover:bg-white/15 p-2 rounded-lg transition bg-white/5 border border-white/10 shadow-[5px_10px_15px_2px_rgba(0,0,0,0.5)]">Saved</a>
                 <a href="#" className="w-70 flex justify-center items-center hover:bg-white/15 p-2 rounded-lg transition bg-white/5 border border-white/10 shadow-[5px_10px_15px_2px_rgba(0,0,0,0.5)]">Settings</a>
             </nav>
