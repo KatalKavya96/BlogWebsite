@@ -86,12 +86,12 @@ const Card = () => {
     
       {filteredCountries.map((country) => (
 
-        <section key={country.name.common} className='w-full h-auto flex items-center justify-center'>
+        <section key={country.name.common} className='w-full h-auto flex items-center justify-center opacity-90 '>
 
-          <div className='w-[40%] border-1 border-white/20 rounded-lg flex flex-col items-center p-[15px] bg-white/8 my-20 mt-[150px]'>
+          <div className='w-[40%]  rounded-lg flex flex-col items-center p-[15px] bg-white/5  mt-[100px] shadow-[5px_10px_15px_2px_rgba(0,0,0,0.5)]'>
 
             <h1 className='text-white text-2xl font-bold p-[6px]'>{country.name.common}</h1>
-            <img src={country.flags.svg} alt={`Flag of ${country.name.common}`} className='h-70 w-140 rounded-lg m-[8px] border border-white/20' />
+            <img src={country.flags.svg} alt={`Flag of ${country.name.common}`} className='h-70 w-140 rounded-lg m-[8px] border border-white/15' />
 
             <div className='w-full flex justify-center ml-115 my-2'>
               <button 
@@ -103,7 +103,7 @@ const Card = () => {
             </div>
 
             {infoVisibility[country.name.common] && (
-              <div className='w-full text-white border border-white/20 m-[5px] rounded-lg'>
+              <div className='w-full text-white border border-white/15 m-[5px] rounded-lg'>
                 <ul className='p-[40px] flex flex-col justify-center z-[-1]'>
                     <li><span className="font-medium">Capital :</span><span className="text-s font-light opacity-90"> {country.capital}</span></li>
                     <li><span className="font-medium">Continent :</span><span className="text-s font-light opacity-90"> {country.continents}</span></li>{country.languages && country.languages.eng ? (<li><span className="font-medium">Language:</span><span className="text-sm font-light opacity-90"> {country.languages.eng}</span></li>) : (<li><span className="font-medium">Language:</span><span className="text-sm font-light opacity-90"> N/A</span></li>)}

@@ -4,7 +4,8 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color:black;
+    /* background-color:rgb(12, 13, 18); */
+    background-color: #0e1113;
 }
 
 .custom-scroll-hide::-webkit-scrollbar {
@@ -12,6 +13,13 @@ body{
 }
 
 .custom-scroll-hide {
-  -ms-overflow-style: none;  /* IE & Edge */
-  scrollbar-width: none;     /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.bg-adder{
+
+  /* background-color: rgb(18, 17, 17); */
+  background-color:#0c0e10 ;
+
 }
