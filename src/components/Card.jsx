@@ -91,7 +91,7 @@ const Card = () => {
           <div className='w-[40%]  rounded-lg flex flex-col items-center p-[15px] bg-white/5  mt-[100px] shadow-[5px_10px_15px_2px_rgba(0,0,0,0.5)]'>
 
             <h1 className='text-white text-2xl font-bold p-[6px]'>{country.name.common}</h1>
-            <img src={country.flags.svg} alt={`Flag of ${country.name.common}`} className='h-70 w-140 rounded-lg m-[8px] border border-white/15' />
+            <img src={country.flags.svg} alt={`Flag of ${country.name.common}`} className='h-70 w-140 rounded-lg m-[8px] ' />
 
             <div className='w-full flex justify-center ml-115 my-2'>
               <button onClick={() => toggleInfoSection(country.name.common)} className='underline  text-blue-500 cursor-pointer mr-[10px]'>{infoVisibility[country.name.common] ? 'Read Less':'Read More'}</button>
