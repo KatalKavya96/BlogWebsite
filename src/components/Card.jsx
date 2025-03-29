@@ -94,12 +94,7 @@ const Card = () => {
             <img src={country.flags.svg} alt={`Flag of ${country.name.common}`} className='h-70 w-140 rounded-lg m-[8px] border border-white/15' />
 
             <div className='w-full flex justify-center ml-115 my-2'>
-              <button 
-                onClick={() => toggleInfoSection(country.name.common)}
-                className='underline  text-blue-500 cursor-pointer '
-              >
-                {infoVisibility[country.name.common] ? 'Read Less':'Read More'}
-              </button>
+              <button onClick={() => toggleInfoSection(country.name.common)} className='underline  text-blue-500 cursor-pointer mr-[10px]'>{infoVisibility[country.name.common] ? 'Read Less':'Read More'}</button>
             </div>
 
             {infoVisibility[country.name.common] && (
@@ -113,11 +108,11 @@ const Card = () => {
                         <span className="text-sm font-light opacity-90"> {country.currencies ? Object.values(country.currencies)[0]?.name || "N/A" : "N/A"}</span>
                         <span className="ml-1">({country.currencies ? Object.values(country.currencies)[0]?.symbol || "N/A" : "N/A"})</span>
                     </li>
-                    <li><span className="font-medium">Area :</span><span className="text-s font-light opacity-90"> {country.area}</span></li>
+                    <li><span className="font-medium">Area :</span><span className="text-s font-light opacity-90"> {country.area} Km<sup>2</sup></span></li>
                     <li><span className="font-medium">Timezone :</span><span className="text-s font-light opacity-90"> {country.timezones}</span></li>
                     <li><span className="font-medium">Driving Side :</span><span className="text-s opacity-90"> {country.car.side}</span></li>
-                    <li><span className="font-medium">Latitude:</span><span className="text-s opacity-90"> {country.capitalInfo.latlng[0]}</span></li>
-                    <li><span className="font-medium">Longitude:</span><span className="text-s opacity-90"> {country.capitalInfo.latlng[1]}</span></li>
+                    <li><span className="font-medium">Latitude:</span><span className="text-s opacity-90"> {country.capitalInfo.latlng[0]}<sup>o</sup></span></li>
+                    <li><span className="font-medium">Longitude:</span><span className="text-s opacity-90"> {country.capitalInfo.latlng[1]}<sup>o</sup></span></li>
                     <li><span className="font-medium">Location :</span><a className="text-s opacity-90 text-blue-400" href={country.maps.googleMaps}> Link</a></li>
 
                 </ul>
