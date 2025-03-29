@@ -17,29 +17,26 @@ git clone https://github.com/your-username/blog-website.git
 
 4. npm run dev
 
-## FEATURES
 
-- Search bar to filter blog posts by keywords
+FEATURES
 
-- Login page with a simple user interface
+- Search bar to filter blog posts by keywords  
+- Login page with a simple user interface  
+- Responsive and sticky navigation bar  
+- Follow section to discover and follow creators  
+- Trending section showcasing the most popular blogs  
+- Blog cards dynamically rendered using fetched API data  
+- Comment section under each blog post  
+- Like and Save functionality for user interaction  
+- "Show More" toggle to reveal hidden blog details  
 
-- Responsive and sticky navigation bar
 
-- Follow section to discover and follow creators
 
-- Trending section showcasing the most popular blogs
+TECH STACK
 
-- Blog cards dynamically rendered using fetched API data
+- React (Vite)  
+- Tailwind CSS  
+- Fetch API  
+- React Hooks (`useState`, `useEffect`)
 
-- Comment section under each blog post
-
-- Like and Save functionality for user interaction
-
-- "Show More" toggle to reveal hidden blog details
-
-## TECH STACK
-
-- React (Vite)
-- Tailwind CSS
-- Fetch API
-- React Hooks (useState, useEffect)
+---
