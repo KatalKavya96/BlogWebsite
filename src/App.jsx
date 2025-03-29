@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Slider from './components/Slider';
 import Trending from './components/Trending';
 import RightBar from "./components/RightBar";
+import Notifications from "./components/Notifications"
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
                 <Slider />
                 <RightBar/>
                 <Trending/>
+                <Notifications/>
               </>
             ) : (
               <Navigate to="/" />
