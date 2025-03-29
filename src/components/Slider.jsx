@@ -21,7 +21,7 @@ const Slider = () => {
             </nav>
 
             <div className="mt-auto pt-10 border-t border-white/20">
-                <p className="text-sm opacity-60">Logged in as <strong>kavyakatal09</strong></p>
+                <p className="text-sm opacity-60">Logged in as <strong>admin</strong></p>
             </div>
 
             </div>

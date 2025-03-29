@@ -18,7 +18,7 @@ const Navbar = ({ searchTerm, setSearchTerm }) => {
 
       <div className="flex items-center gap-4">
         <span className="text-white text-l font-medium ml-[64px] border border-white/20 p-[7px] rounded-3xl bg-white/15">@KavyaKatal</span>
-        <button className="bg-green-600 text-white px-4 py-2 rounded-full  transition duration-100 cursor-pointer">Log In</button>
+        <button className="bg-green-600 text-white px-4 py-2 rounded-full  transition duration-100 cursor-pointer">Admin</button>
       </div>
 
     </nav>

@@ -38,5 +38,6 @@ TECH STACK
 - Tailwind CSS  
 - Fetch API  
 - React Hooks (`useState`, `useEffect`)
+- React Router
 
 ---
