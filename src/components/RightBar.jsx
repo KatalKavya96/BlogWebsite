@@ -1,10 +1,12 @@
 import React from 'react'
+import "../index.css"
+
 
 const RightBar = () => {
   return (
     
     <>
-        <div className='h-78 w-80 fixed top-0 right-2 border border-white/30  mt-[70px] overflow-y-scroll text-white p-[15px] rounded-xl'>
+        <div className='h-78 w-80 fixed top-0 right-2 border border-white/30  mt-[70px] overflow-y-scroll text-white p-[15px] rounded-xl custom-scroll-hide'>
             
             <div className='h-15 text-xl font-bold mt-[5px]'>Who to follow</div>
 
