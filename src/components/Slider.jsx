@@ -29,7 +29,7 @@ const Slider = () => {
 
             </div>
 
-            <div className='w-full h-25 border-t border-t-white/20 mt-[106px] flex justify-between items-center p-[20px]'>
+            <div className='w-full h-25 border-t border-t-white/20 mt-[30%] flex justify-between items-center p-[20px]'>
               <div className='flex justify-center items-center gap-2'>
                 <div className="h-14 w-14 flex items-center justify-center rounded-full  bg-purple-600 text-white/90 cursor-pointer shadow-[5px_10px_15px_2px_rgba(0,0,0,0.5)]">KK</div>
                 <div className='flex flex-col items-center justify-center'>
