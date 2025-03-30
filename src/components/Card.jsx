@@ -99,22 +99,18 @@ const Card = () => {
 
             {infoVisibility[country.name.common] && (
               <div className='w-full text-white border border-white/15 m-[5px] rounded-lg'>
-                <ul className='p-[40px] flex flex-col justify-center z-[-1]'>
-                    <li><span className="font-medium">Capital :</span><span className="text-s font-light opacity-90"> {country.capital}</span></li>
-                    <li><span className="font-medium">Continent :</span><span className="text-s font-light opacity-90"> {country.continents}</span></li>{country.languages && country.languages.eng ? (<li><span className="font-medium">Language:</span><span className="text-sm font-light opacity-90"> {country.languages.eng}</span></li>) : (<li><span className="font-medium">Language:</span><span className="text-sm font-light opacity-90"> N/A</span></li>)}
-                    <li><span className="font-medium">Population :</span><span className="text-s font-light opacity-90"> {country.population}</span></li>
-                    <li>
-                        <span className="font-medium">Currency :</span>
-                        <span className="text-sm font-light opacity-90"> {country.currencies ? Object.values(country.currencies)[0]?.name || "N/A" : "N/A"}</span>
-                        <span className="ml-1">({country.currencies ? Object.values(country.currencies)[0]?.symbol || "N/A" : "N/A"})</span>
-                    </li>
-                    <li><span className="font-medium">Area :</span><span className="text-s font-light opacity-90"> {country.area} Km<sup>2</sup></span></li>
-                    <li><span className="font-medium">Timezone :</span><span className="text-s font-light opacity-90"> {country.timezones}</span></li>
-                    <li><span className="font-medium">Driving Side :</span><span className="text-s opacity-90"> {country.car.side}</span></li>
-                    <li><span className="font-medium">Latitude:</span><span className="text-s opacity-90"> {country.capitalInfo.latlng[0]}<sup>o</sup></span></li>
-                    <li><span className="font-medium">Longitude:</span><span className="text-s opacity-90"> {country.capitalInfo.latlng[1]}<sup>o</sup></span></li>
-                    <li><span className="font-medium">Location :</span><a className="text-s opacity-90 text-blue-400" href={country.maps.googleMaps}> Link</a></li>
-
+                <ul className='p-[40px] flex flex-col justify-center z-[-1] overflow-scroll'>
+                  <li><span className="font-medium">Capital :</span>{country.capital ? <span className="text-s font-light opacity-90"> {country.capital}</span> : " N/A"}</li>
+                  <li><span className="font-medium">Continent :</span>{country.continents ? <span className="text-s font-light opacity-90"> {country.continents}</span> : " N/A"}</li>
+                  <li><span className="font-medium">Language :</span>{country.languages?.eng ? <span className="text-sm font-light opacity-90"> {country.languages.eng}</span> : " N/A"}</li>
+                  <li><span className="font-medium">Population :</span>{country.population ? <span className="text-s font-light opacity-90"> {country.population}</span> : " N/A"}</li>
+                  <li><span className="font-medium">Currency :</span><span className="text-sm font-light opacity-90"> {country.currencies ? Object.values(country.currencies)[0]?.name || "N/A" : "N/A"}</span><span className="ml-1">({country.currencies ? Object.values(country.currencies)[0]?.symbol || "N/A" : "N/A"})</span></li>
+                  <li><span className="font-medium">Area :</span>{country.area ? <span className="text-s font-light opacity-90"> {country.area} Km<sup>2</sup></span> : " N/A"}</li>
+                  <li><span className="font-medium">Timezone :</span>{country.timezones ? <span className="text-s font-light opacity-90"> {country.timezones}</span> : " N/A"}</li>
+                  <li><span className="font-medium">Driving Side :</span>{country.car?.side ? <span className="text-s opacity-90"> {country.car.side}</span> : " N/A"}</li>
+                  <li><span className="font-medium">Latitude :</span>{country.capitalInfo?.latlng?.[0] != null ? <span className="text-s opacity-90"> {country.capitalInfo.latlng[0]}<sup>o</sup></span> : " N/A"}</li>
+                  <li><span className="font-medium">Longitude :</span>{country.capitalInfo?.latlng?.[1] != null ? <span className="text-s opacity-90"> {country.capitalInfo.latlng[1]}<sup>o</sup></span> : " N/A"}</li>
+                  <li><span className="font-medium">Location :</span>{country.maps?.googleMaps ? <a className="text-s opacity-90 text-blue-400" href={country.maps.googleMaps} target="_blank" rel="noopener noreferrer"> Link</a> : " N/A"}</li>
                 </ul>
               </div>
             )}
