@@ -23,7 +23,7 @@ function App() {
               <>
                 <Navbar />
                 <Card />
-                <Slider />
+                <Slider setIsAuthenticated={setIsAuthenticated} />
                 <RightBar/>
                 <Trending/>
                 <Notifications/>

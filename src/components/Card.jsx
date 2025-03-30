@@ -149,6 +149,8 @@ const Card = () => {
           )}
           </div>
         </section>
+        
+
       ))}
     </>
   );
